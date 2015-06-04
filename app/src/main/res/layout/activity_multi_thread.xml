@@ -28,7 +28,8 @@
         android:text="Clear"
         android:id="@+id/clear"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:onClick="clear" />
 
     <Button
         android:layout_width="wrap_content"
@@ -37,7 +38,8 @@
         android:id="@+id/load"
         android:layout_above="@+id/clear"
         android:layout_alignLeft="@+id/clear"
-        android:layout_alignStart="@+id/clear" />
+        android:layout_alignStart="@+id/clear"
+        android:onClick="load" />
 
     <Button
         android:layout_width="wrap_content"
@@ -46,6 +48,7 @@
         android:id="@+id/create"
         android:layout_above="@+id/load"
         android:layout_alignRight="@+id/load"
-        android:layout_alignEnd="@+id/load" />
+        android:layout_alignEnd="@+id/load"
+        android:onClick="create" />
 
 </RelativeLayout>
