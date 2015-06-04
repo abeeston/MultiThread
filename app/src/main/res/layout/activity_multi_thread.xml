@@ -18,7 +18,9 @@
         android:layout_height="wrap_content"
         android:id="@+id/listView"
         android:layout_below="@+id/progressBar"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="67dp" />
 
     <Button
         android:layout_width="wrap_content"
@@ -40,7 +42,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Create"
+        android:text="CreateFile"
         android:id="@+id/create"
         android:layout_above="@+id/load"
         android:layout_alignRight="@+id/load"
