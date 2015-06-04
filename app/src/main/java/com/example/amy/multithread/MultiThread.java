@@ -5,8 +5,18 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class MultiThread extends ActionBarActivity {
+
+    private String fileName = "numbers.txt";
+    private List<String> fileList = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,5 +44,22 @@ public class MultiThread extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void create() {
+    }
+
+    public void load() {
+        try {
+            FileReader fileOutput = new FileReader(new File(this.getFilesDir(), fileName));
+        }
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void clear() {
     }
 }
