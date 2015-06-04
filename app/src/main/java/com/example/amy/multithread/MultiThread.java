@@ -93,9 +93,7 @@ public class MultiThread extends ActionBarActivity {
 
         } catch (IOException e) {
             e.printStackTrace();
-        } //catch (InterruptedException e) {
-            //e.printStackTrace();
-        //}
+        }
     }
 
     public void clear() {
